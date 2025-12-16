@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Explorer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f6fa;
+            color: #333;
+        }
+        h2{
+            text-align: center;
+            padding:10px;
+        }
+        .one {
+            text-align: center;
+            padding:10px;
+            margin:15px;
+        }
+        /* HEADER */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav a {
+            display: inline-block;
+            margin-left: 20px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+        }
+        .header-image {
+            width: 100vw;          
+            height: 70vh;         
+            object-fit: cover;     
+            display: block;
+        }
+        .destinations {
+            padding: 60px 50px;
+        }
+        .destinations h2 {
+            font-size: 32px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .destination-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+        .card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .card img {
+            width: 100%;
+            height: 270px;
+            object-fit: cover;
+            object-position: top;
+        }
+        .card-content {
+            padding: 15px;
+        }
+        .card-content h3 {
+            margin-bottom: 10px;
+        }
+        .card-content p {
+            margin-bottom: 10px;
+            line-height: 1.5;
+        }
+        .travel-box {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 30px;
+            background: rgb(255, 209, 236);
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            line-height: 1.7;
+        }
+
+        .travel-box h2 {
+            color: #4e5cf3;
+            margin-bottom: 15px;
+        }
+        .main-heading {
+            text-align: center;
+            padding: 25px 10px;
+            color: #4e5cf3;
+            font-size: 36px;
+        }
+        .explore {
+            background: #eef3ff;
+            padding: 60px 50px;
+        }
+        .explore h2 {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 25px;
+        }
+        .explore-flex {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        .explore-box {
+            flex: 1;
+            min-width: 280px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .explore-box h3 {
+            margin-bottom: 10px;
+        }
+        .gallery {
+            padding: 60px 50px;
+        }
+        .gallery h2 {
+            font-size: 32px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+        }
+        .gallery-grid img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .contact {
+            padding: 60px 50px;
+            background: white;
+        }
+        .contact h2 {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 25px;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        form button {
+            padding: 12px 25px;
+            background: #2d3fff;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        footer {
+            background: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            .destination-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 480px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+            nav a {
+                margin: 10px;
+            }
+            .destination-grid {
+                grid-template-columns: 1fr;
+            }
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+   <header>
+    <h2>Travel Explorer</h2>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="destinations.html">Travel in India</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+   </header>
+   <h2 class="main-heading">Discover the World!</h2>
+<img 
+    src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" 
+    alt="Travel Adventure"
+    class="header-image">
+
+    </section>
+    <p class="one">"Travel in style, explore without limits."</p>
+    <div class="travel-box">
+    <h2>LET'S EXPLORE!</h2>
+    <h2>Why Travel With Us?</h2>
+    <p>MORE THAN 12 YEARS OF TRAVEL TOUR AND EXPERIENCE<br>We Are Travel Explorers!<br>
+We are providing highly efficient and timely services to our clients.<br>
+Our experienced and well-trained professionals ensure that everything is carried on safely and swiftly.<br>
+Once you have opted for our services, you don't have to worry about your holidays and travelling.<br>
+We possess all the necessary man and material required for successfully conducting different activities for which we are known.<br>
+We are proud to have a long list of successful clients across the world.<br>
+We as an organization stand on the edifice of safety, integrity and reliability.</p>
+</div>
+</body>
+</html>

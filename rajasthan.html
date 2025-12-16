@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rajasthan | Travel Explorer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background: #f4f6fa;
+            color: #333;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+        }
+        .content {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .content h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .content img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 25px;
+        }
+        .content h2 {
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        .content p {
+            line-height: 1.7;
+            margin-bottom: 15px;
+        }
+        ul {
+            margin-left: 20px;
+            line-height: 1.8;
+        }
+        .back-btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 10px 18px;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+        .back-btn:hover {
+            background: #0056b3;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+            margin-top: 40px;
+        }
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+            }
+            nav a {
+                margin: 10px;
+            }
+            .content img {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h2>Travel Explorer</h2>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+<div class="content">
+    <h1>Rajasthan</h1>
+    <img src="https://www.tourmyindia.com/states/rajasthan/image/best-places-to-visit-rajasthan.webp" alt="Rajasthan">
+    <h2>About Rajasthan</h2>
+    <p>
+        Rajasthan is known as the Land of Kings. It is famous for its royal palaces,
+        historic forts, colorful culture, and vast deserts. The state reflects a rich
+        blend of tradition and heritage.
+    </p>
+    <h2>Top Attractions</h2>
+    <ul>
+        <li>Jaipur – The Pink City</li>
+        <li>Udaipur – City of Lakes</li>
+        <li>Jaisalmer – Desert Safari</li>
+        <li>Jodhpur – Mehrangarh Fort</li>
+        <li>Pushkar – Holy City</li>
+    </ul>
+    <h2>Best Time to Visit</h2>
+    <p>
+        The best time to visit Rajasthan is from October to March when the weather
+        is pleasant and suitable for sightseeing.
+    </p>
+    <a href="destinations.html" class="back-btn">Back to Destinations</a>
+</div>
+<footer>
+    <p>© 2025 Travel Explorer</p>
+</footer>
+</body>
+</html>
