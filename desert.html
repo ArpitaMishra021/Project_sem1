@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Indian Deserts</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f9fefe;
+      color: #333;
+    }
+
+    /* ---------- HEADER ---------- */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background: #ffe6c8;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    header h2 {
+      font-size: 26px;
+    }
+
+    nav a {
+      text-decoration: none;
+      margin-left: 25px;
+      color: black;
+      font-weight: bold;
+    }
+
+    /* ---------- IMAGE SECTION ---------- */
+    .image-container {
+      position: relative;
+      max-width: 1000px;
+      margin: 40px auto;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .image-container img {
+      width: 100%;
+      height: 420px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .text-overlay {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 38px;
+      font-weight: bold;
+      text-align: center;
+      background: rgba(0,0,0,0.35);
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+    }
+
+    /* ---------- ABOUT SECTION ---------- */
+    .about {
+      max-width: 1000px;
+      margin: 60px auto;
+      display: flex;
+      gap: 30px;
+      padding: 0 20px;
+      align-items: center;
+    }
+
+    .about img {
+      width: 45%;
+      border-radius: 10px;
+    }
+
+    .about-text h3 {
+      font-size: 26px;
+      margin-bottom: 15px;
+      color:#8a4b00;
+    }
+
+    .about-text ul {
+      line-height: 1.8;
+    }
+
+    /* ---------- ATTRACTIONS ---------- */
+    .attractions {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    .attractions h3 {
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 30px;
+      color: #8a4b00;
+    }
+
+    .cards {
+      display: flex;
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      overflow: hidden;
+      width: 100%;
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card h4 {
+      padding: 15px;
+      font-size: 18px;
+    }
+
+    .card p {
+      padding: 0 15px 15px;
+      font-size: 14px;
+    }
+
+    /* ---------- BEST TIME ---------- */
+    .best-time {
+      max-width: 1000px;
+      margin: 60px auto;
+      background: #fff2c8;
+      padding: 30px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .best-time h3 {
+      font-size: 26px;
+      color: #8a4b00;
+      margin-bottom: 10px;
+    }
+
+    /* ---------- FOOTER ---------- */
+    footer {
+      margin-top: 60px;
+      padding: 15px;
+      text-align: center;
+      background: #3f3f3f;
+      color:white;
+      font-size: 14px;
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 768px) {
+      .about {
+        flex-direction: column;
+      }
+
+      .about img {
+        width: 100%;
+      }
+
+      .cards {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h2>Travel Explorer</h2>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="lakshadweep.html">Islands</a>
+        <a href="desert.html">Deserts</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- IMAGE WITH TEXT -->
+  <div class="image-container">
+    <img src="https://assets.zeezest.com/blogs/PROD_Pro%20desert_1664882566527.jpg" alt="Indian Desert">
+    <div class="text-overlay">Golden Deserts of India</div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="about">
+    <img src="https://www.welcomerajasthan.com/city%20photoes/camel-safari.jpg" alt="Camel Safari">
+    <div class="about-text">
+      <h3>Desert Adventures Await!</h3>
+      <ul>
+        <li>Camel Safari & Dune Bashing</li>
+        <li>Desert Camping under the stars</li>
+        <li>Traditional Folk Dance & Culture</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ATTRACTIONS -->
+  <section class="attractions">
+    <h3>Top Desert Destinations</h3>
+    <div class="cards">
+      <div class="card">
+        <img src="https://static.toiimg.com/photo/msid-68427042,width-96,height-65.cms">
+        <h4>Thar Desert</h4>
+        <p>India’s largest desert, famous for sand dunes and camel safaris.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://www.tourmyindia.com/states/rajasthan/image/jaisalmer-banner.webp">
+        <h4>Jaisalmer</h4>
+        <p>The Golden City surrounded by vast desert landscapes.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://www.thepinkcityholidays.com/wp-content/uploads/2024/02/Camel-Festival-in-Bikaner.jpg">
+        <h4>Bikaner</h4>
+        <p>Known for desert culture, forts, and camel festivals.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- BEST TIME -->
+  <section class="best-time">
+    <h3>Best Time to Visit</h3>
+    <p>October to March – Pleasant weather and ideal for desert safaris.</p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2025 Travel Explorer | Indian Deserts
+  </footer>
+
+</body>
+</html>

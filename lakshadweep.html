@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lakshadweep Islands</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f9fefe;
+      color: #333;
+    }
+
+    /* ---------- HEADER ---------- */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background: #c8f7ff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    header h2 {
+      font-size: 26px;
+    }
+
+    nav a {
+      text-decoration: none;
+      margin-left: 25px;
+      color: black;
+      font-weight: bold;
+    }
+
+    /* ---------- IMAGE SECTION ---------- */
+    .image-container {
+      position: relative;
+      max-width: 1000px;
+      margin: 40px auto;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .image-container img {
+      width: 100%;
+      height: 420px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .text-overlay {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 38px;
+      font-weight: bold;
+      text-align: center;
+      background: rgba(0,0,0,0.25);
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+    }
+
+    /* ---------- ABOUT SECTION ---------- */
+    .about {
+      max-width: 1000px;
+      margin: 60px auto;
+      display: flex;
+      gap: 30px;
+      padding: 0 20px;
+      align-items: center;
+    }
+
+    .about img {
+      width: 45%;
+      border-radius: 10px;
+    }
+
+    .about-text h3 {
+      font-size: 26px;
+      margin-bottom: 15px;
+      color:#00456c;
+    }
+
+    .about-text p {
+      line-height: 1.6;
+    }
+
+    /* ---------- ATTRACTIONS ---------- */
+    .attractions {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    .attractions h3 {
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 30px;
+      color: #00456c;
+    }
+
+    .cards {
+      display: flex;
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      overflow: hidden;
+      width: 100%;
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card h4 {
+      padding: 15px;
+      font-size: 18px;
+    }
+
+    .card p {
+      padding: 0 15px 15px;
+      font-size: 14px;
+    }
+
+    .best-time {
+      max-width: 1000px;
+      margin: 60px auto;
+      background: #e8ffa4;
+      padding: 30px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .best-time h3 {
+      font-size: 26px;
+      color: #00456c;
+      margin-bottom: 10px;
+    }
+
+    /* ---------- FOOTER ---------- */
+    footer {
+      margin-top: 60px;
+      padding: 15px;
+      text-align: center;
+      background: #3f3f3f;
+      color:white;
+      font-size: 14px;
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 768px) {
+      .about {
+        flex-direction: column;
+      }
+
+      .about img {
+        width: 100%;
+      }
+
+      .cards {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h2>Travel Explorer</h2>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="lakshadweep.html">Islands</a>
+        <a href="desert.html">Deserts</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- IMAGE WITH TEXT -->
+  <div class="image-container">
+    <img src="https://seawatersports.com/images/destination/state/places-to-visit-in-lakshadweep.jpg" alt="Lakshadweep">
+    <div class="text-overlay">Water wonders to visit</div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="about">
+    <img src="https://seoimgak.mmtcdn.com/blog/sites/default/files/images/snorkelling(2).jpg" alt="Lakshadweep Beach">
+    <div class="about-text">
+      <h3>Thrilling Water Sports!</h3>
+      <ul>
+        <li>Scuba Diving & Snorkeling</li>
+        <li>Kayaking & Canoeing</li>
+        <li>Sailing, Windsurfing, & Parasailing</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ATTRACTIONS -->
+  <section class="attractions">
+    <h3>Top Attractions</h3>
+    <div class="cards">
+      <div class="card">
+        <img src="https://media2.thrillophilia.com/images/photos/000/180/268/original/1574146580_Agatti_Island.png?gravity=center&width=1280&height=642&crop=fill&quality=auto&fetch_format=auto&flags=strip_profile&format=jpg&sign_url=true">
+        <h4>Agatti Island</h4>
+        <p>Famous for clear lagoons and coral reefs.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://media2.thrillophilia.com/images/photos/000/359/257/original/1603544733_lakshadweep.jpg?">
+        <h4>Bangaram Island</h4>
+        <p>Perfect for relaxation and water sports.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://s7ap1.scene7.com/is/image/incredibleindia/kavaratti-island-rural-hero?qlt=82&ts=1726642009760">
+        <h4>Kalpeni Island</h4>
+        <p>Known for scenic beauty and calm beaches.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- BEST TIME -->
+  <section class="best-time">
+    <h3>Best Time to Visit</h3>
+    <p>October to May – Pleasant weather and calm sea conditions.</p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2025 Travel Explorer | Lakshadweep Islands
+  </footer>
+
+</body>
+</html>

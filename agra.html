@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Agra | Travel Explorer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background:beige;
+            color: #1d1d1d;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height:12vh;
+            padding: 20px 50px;
+            background: rgb(247, 198, 198);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+        }
+
+        .content {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .content h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .content img {
+            width: 100%;
+            height: 410px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 25px;
+        }
+
+        .content h2 {
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .content p {
+            line-height: 1.7;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            margin-left: 20px;
+            line-height: 1.8;
+        }
+
+        .back-btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 10px 18px;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        .back-btn:hover {
+            background: #0056b3;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+            }
+
+            nav a {
+                margin: 10px;
+            }
+
+            .content img {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h2>Travel Explorer</h2>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+<div class="content">
+    <h1>Agra</h1>
+    <img src="https://foodandtravel.com/imager/hours/219609/Ministry-of-Tourism-Govt-of-India-595161_Taj-Mahal-Uttar-Pradesh-Aerial_821631bb23140209ea99c8f810f75634.jpg" alt="Agra">
+    <h2><u>About Agra</u></h2>
+    <p>
+        Agra is home to the world-famous Taj Mahal and is known for its rich Mughal heritage. 
+        The city boasts historic forts, palaces, and bustling markets.
+    </p>
+    <h2><u>Top Attractions</u></h2>
+    <ul>
+        <li>Taj Mahal – Iconic Monument</li>
+        <li>Agra Fort – Historical Fortress</li>
+        <li>Fatehpur Sikri – Ancient City</li>
+        <li>Itimad-ud-Daulah – Baby Taj</li>
+        <li>Mehtab Bagh – Garden with Taj View</li>
+    </ul>
+    <h2><u>Outdoor Activities</u></h2>
+    <ul>
+        <li>Local Markets: Explore for marble souvenirs, leather goods, carpets, and jewelry.</li>
+        <li>Handicrafts: Agra is famous for its intricate marble inlay work (Pietra Dura).</li>
+        <li>Food Experiences:</li>
+        <ul>
+            <li>Sample tangy Chaat</li>
+            <li>Sweet Dahi Bhalla</li>
+            <li>Spicy Kachori</li>
+            <li>The famous local sweet, Petha.</li>
+        </ul>
+    </ul>
+    <h2><u>Best Time to Visit</u></h2>
+    <p>
+        The best time to visit Agra is from October to March when the weather is cool and comfortable for sightseeing.
+    </p>
+    <p><i><b>Packages starting at ₹5,500/- person.</b></i></p>
+    <a href="destinations.html" class="back-btn">Back to Destinations</a>
+</div>
+<footer>
+    <p>© 2025 Travel Explorer</p>
+</footer>
+</body>
+</html>
